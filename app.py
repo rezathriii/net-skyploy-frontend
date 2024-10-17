@@ -38,11 +38,11 @@ footer_style = {
 }
 
 carousel_items = [
-    {"key": "1", "src": "/public/images/main-slider/slider-1.png", "header": "Satellite Analysis",
+    {"key": "1", "src": "/assets/images/slider-1.png", "header": "Satellite Analysis",
      "caption": "Analyze satellite visibility."},
-    {"key": "2", "src": "/public/images/main-slider/slider-2.png", "header": "Skyplot Visualization",
+    {"key": "2", "src": "/assets/images/slider-2.png", "header": "Skyplot Visualization",
      "caption": "Graphical Skyplot."},
-    {"key": "3", "src": "/public/images/main-slider/slider-3.png", "header": "DOP Values",
+    {"key": "3", "src": "/assets/images/slider-3.png", "header": "DOP Values",
      "caption": "View detailed DOP value graphs."}
 ]
 
@@ -93,6 +93,7 @@ app.layout = html.Div(style=main_style, children=[
         html.P("Lena Kazemahvazi - Team Member"),
         html.P("Elahe Fallahi - Team Member"),
         html.P("Arezou Shadkam - Team Member"),
+        html.P("Keyvan Abbas Majidi - Team Member")
     ]),
 
     # Open Source Information
@@ -110,4 +111,4 @@ app.layout = html.Div(style=main_style, children=[
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host="0.0.0.0", port=80, debug=True)
